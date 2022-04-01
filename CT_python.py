@@ -1,4 +1,4 @@
-#Compute rHistory
+#Computer History
 '''
 "First computer" created by Greeks."
 "In 1801, "Telar de Jacquar."
