@@ -3,7 +3,9 @@ print("Hello World!")
 # New Components
 'Programming'+'Rocks'+'!'
 2+2
+
 '''Variables'''
+
 # Make program easier to understand
 # They have names that aim to memory values
 # Operator (=) associates a variable with a value 
@@ -19,6 +21,7 @@ type(my_none)
 '''It's important to assing correct names to variables.'''
 
 '''Assigning new values to variables'''
+
 # We change the pointer
 my_var = 'Hello World!'
 print(my_var)
@@ -28,6 +31,7 @@ print(my_var)
 id(my_var)      #Place where is located
 
 '''Strings'''
+
 #len()      String's length
 #index()    Index 
 #slice()    [start, stop, step]
@@ -36,4 +40,13 @@ len(my_str)
 my_str[0]
 my_str[0:5:1]
 
-print(f'I love to say {my_str}') # Amusing way to write
+print(f'I love to say {my_str}') # Amusing way to write.
+
+'''Inputs'''
+
+name = input('Type your name here: ')   # Assing input to variable name.
+print(f'Your name is {name}')
+
+number = int(input('Type a number here: ')) # Assing a str to variable number.
+
+type(number)
