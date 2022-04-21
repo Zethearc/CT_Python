@@ -58,7 +58,7 @@ Se accede a los atributos con la notacion de punto
 Puede tener atributos privados. Por convencion comienzan con "_"
 
 '''
-        
+
 class Coordenada:
 
     def __init__(self, x, y):
@@ -76,5 +76,4 @@ if __name__ == '__main__':
     coord_1 = Coordenada(3, 30)
     coord_2 = Coordenada(4, 8)
 
-    #print(coord_1.distancia(coord_2))
-    print(isinstance(3, Coordenada))
+    print(coord_1.distancia(coord_2))

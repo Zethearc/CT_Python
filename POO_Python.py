@@ -29,7 +29,7 @@ hasta ahora nos permiten definir cosas sencillas, como
 el costo de algo, el nombre de un usuario, las veces que
 debe correr un bucle, etc. Sin embargo, existen ocasiones
 cuando necesitamos definir estructuras mas complejas, por
-ekemplo un hotel. Podriamos utilizar dos listas: una para
+ejemplo un hotel. Podriamos utilizar dos listas: una para
 definir los cuartos y una segunda para definir si el 
 cuarto se encuentra ocupado o no.
 
@@ -37,6 +37,18 @@ cuarto se encuentra ocupado o no.
 
 cuartos_de_hotel =   [101,   102,    103,    201,    202,    203]
 cuarto_ocupado =    [True,  False,  False,  True,   True,   False]
+
+class cuarto:
+    
+    def __init__(self, numero_cuarto, estado):
+        
+        self.numero_cuarto = numero_cuarto
+        self.estado = estado
+        
+    def checkout(self, estado):
+        
+        self.estado = estado
+
 
 '''
 
@@ -97,18 +109,19 @@ referencia a la instancia)
 
 '''
 
-class Hotel:
+# class Hotel:
     
-    def __init__(self, numero_maximo_de_huespedes, lugares_de_estacionamiento):
-        self.numero_maximo_de_huespedes = numero_maximo_de_huespedes
-        self.lugares_de_estacionamiento = lugares_de_estacionamiento
-        self.huespedes = 0
+#     def __init__(self, numero_maximo_de_huespedes, lugares_de_estacionamiento):
+        
+#         self.numero_maximo_de_huespedes = numero_maximo_de_huespedes
+#         self.lugares_de_estacionamiento = lugares_de_estacionamiento
+#         self.huespedes = 0
 
 
-hotel = Hotel(numero_maximo_de_huespedes=50, lugares_de_estacionamiento=20)
+# hotel = Hotel(numero_maximo_de_huespedes=50, lugares_de_estacionamiento=20)
 # print(hotel.lugares_de_estacionamiento)
 
-##resultado esperado "20"
+# #resultado esperado "20"
 
 # Metodos de instancia
 
@@ -123,20 +136,21 @@ self como primer argumentos
 
 '''
 
-class Hotel:
+# class Hotel:
     
-    def __init__(self, numero_maximo_de_huespedes, lugares_de_estacionamiento):
-        self.numero_maximo_de_huespedes = numero_maximo_de_huespedes
-        self.lugares_de_estacionamiento = lugares_de_estacionamiento
-        self.huespedes = 0
-    def anadir_huespedes(self, cantidad_de_huespedes):
-        self.huespedes += cantidad_de_huespedes
+#     def __init__(self, numero_maximo_de_huespedes, lugares_de_estacionamiento):
+#         self.numero_maximo_de_huespedes = numero_maximo_de_huespedes
+#         self.lugares_de_estacionamiento = lugares_de_estacionamiento
+#         self.huespedes = 0
+        
+#     def anadir_huespedes(self, cantidad_de_huespedes):
+#         self.huespedes += cantidad_de_huespedes
 
-    def checkout(self, cantidad_de_huespedes):
-        self.huespedes -= cantidad_de_huespedes
+#     def checkout(self, cantidad_de_huespedes):
+#         self.huespedes -= cantidad_de_huespedes
 
-    def ocupacion_total(self):
-        return self.huespedes
+#     def ocupacion_total(self):
+#         return self.huespedes
 
 
 # hotel = Hotel(50, 20)
