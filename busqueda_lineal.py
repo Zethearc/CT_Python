@@ -1,4 +1,4 @@
-import random
+import random #Importar libreria random
 
 def busqueda_lineal(lista, objetivo):
     match = False
@@ -10,8 +10,9 @@ def busqueda_lineal(lista, objetivo):
     return match
 
 if __name__ == '__main__':
-    tamano_de_lista = int(input('De que tamano sera la lista?'))
-    objetivo = int(input('Quenumero quieres encontrar?'))
+    #Inicia el programa
+    tamano_de_lista = int(input('De que tamano sera la lista? ->'))
+    objetivo = int(input('Que numero quieres encontrar? ->'))
     
     lista = [random.randint(0, 100) for i in range(tamano_de_lista)]
     
