@@ -18,6 +18,47 @@ Ventajas:
 
 '''
 
+# Definicion de clase
+
+# class <nombre_de_la_clase> (<super_clase>):
+#     def __init__(self, <params>):
+#         <expresion>
+#     def <nombre_del_metodo>(self, <params>):        
+#         <expresion>
+
+# Ejemplo
+
+class persona:
+    
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def saluda(self, otra_persona):
+        return f'Hola {otra_persona.nombre}, me llamo {self.nombre}.'
+
+# Uso del ejemplo
+
+david = persona('David', 35)
+erika = persona('Erika', 32)
+
+print(david.saluda(erika))
+
+# Instancia
+
+'''
+
+Los atributos de clase nos permiten:
+    Representar datos
+    Procedimientos para interacturar con los mismo (metodos)
+    Mecanismos para esconder la representacion interna
+
+Se accede a los atributos con la notacion de punto
+
+Puede tener atributos privados. Por convencion comienzan con "_"
+
+'''
+        
 class Coordenada:
 
     def __init__(self, x, y):
