@@ -139,12 +139,12 @@ class Hotel:
         return self.huespedes
 
 
-hotel = Hotel(50, 20)
-print(hotel.ocupacion_total())
-hotel.anadir_huespedes(3)
-print(hotel.ocupacion_total())
-hotel.checkout(1)
-print(hotel.ocupacion_total())
-hotel.ocupacion_total()
+# hotel = Hotel(50, 20)
+# print(hotel.ocupacion_total())
+# hotel.anadir_huespedes(3)
+# print(hotel.ocupacion_total())
+# hotel.checkout(1)
+# print(hotel.ocupacion_total())
+# hotel.ocupacion_total()
 
-
+'Ahora ya sabemos que son las clases '
