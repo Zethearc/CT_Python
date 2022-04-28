@@ -110,3 +110,45 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+# ¿Por qué graficar?
+
+'''
+
+Reconocimiento de patrones
+Prediccion de una serie
+Simplifica la interpretacion y las conclusiones acerca de los datos
+
+'''
+
+'''
+
+Graficado simple
+
+Bokeh permite construir graficas complejas de manera rapida y
+con comandos simples
+
+Permite exportar a varios formatos como html, notebooks, imagenes, etc.
+
+Bokeh se pueden utilizar en el servido con Flask y Django
+
+'''
+
+# Libreria
+
+from bokeh.plotting import figure, output_file, show
+
+if __name__ == '__main__':
+    output_file('graficado_simple.html')
+    fig = figure()
+    
+    total_vals = int(input('Cuantos valores quieres graficar?'))
+    x_vals = list(range(total_vals))
+    y_vals = []
+
+    for x in x_vals:
+        val = int(input(f'Valor y para {x}'))
+        y_vals.append(val)
+
+    fig.line(x_vals, y_vals, line_width=2)
+    show(fig)
