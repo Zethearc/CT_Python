@@ -93,4 +93,67 @@ def run():
 
 if __name__=='__main__':
     run()
+
+# Funciones anonimas
+
+'lambda argumentos: expresion'
+
+# Ejemplo palindromo
+
+palindrome = lambda string: string ==string[::-1]
+print(palindrome('ana'))
+
+# Funciones de orden superior
+
+'Funciones que reciben a otras como parametors'
+
+def saludo(func):
+    func()
     
+def hola():
+    print('Hola!')
+
+def adios():
+    print('Adios!')
+
+saludo(hola)
+saludo(adios)
+
+'Funciones sumamente importante en muchos lenguajes de programacion'
+'Map, Filter and Reduce'
+
+# Filter
+
+# [1, 4, 5, 6, 9, 13, 19, 21] Lista de numeros aleatorios
+# [1, 5, 9, 13, 19, 21] Lista de numeros impares
+
+my_list = [1, 4, 5, 6, 9, 13, 19, 25]
+odd = [i for i in my_list if i % 2 != 0]
+print(odd)
+
+odd = list(filter(lambda x: x%2 != 0, my_list))
+print(odd)
+
+# Map
+
+my_list = [1, 2, 3, 4, 5]
+squares = [i**2 for i in my_list]
+print(squares)
+
+squares = list(map(lambda x: x**2, my_list))
+print(squares)
+
+# Reduce
+
+my_list = [2, 2, 2, 2, 2]
+
+all_mulltiplied = 1
+
+for i in my_list:
+    all_mulltiplied = all_mulltiplied * i
+print(all_mulltiplied)
+
+from functools import reduce
+
+all_multiplied = reduce(lambda a, b: a * b, my_list)
+print(all_multiplied)
