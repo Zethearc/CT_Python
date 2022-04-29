@@ -98,6 +98,9 @@ class Ciclista(Persona):
 
     def avanza(self):
         print('Ando moviendome en mi bicicleta')
+    
+    def saluda(self, persona):
+        print(f'Hola, {persona.nombre} soy {self.nombre}')
 
 
 def main():
